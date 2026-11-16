@@ -1,6 +1,6 @@
 # Predicting Next-Week Sales of Clothing Items
 
-This is the repository for our final project in INFO1998.
+This is the repository for our final project in INFO1998 (Cornell Data Science).
 
 ## Hypothesis
 
@@ -71,9 +71,16 @@ To use the real data:
 - Articles already selling in the first 4 weeks of the data are dropped, since their launch date is
   unknown and "age" would be wrong for them. This biases the sample toward newer items.
   (`--keep-censored` keeps them.)
-- Kaggle's `price` is a scaled value, not dollars. We only use relative price changes.
-- `prepare_hm.py` was only tested on a small fake file in the same format, not the real download.
-  If it runs out of memory, lower `chunksize` in the script.
+- Kaggle's `price` is a scaled value, not dollars. The model uses it as a price *level* and as a
+  week-over-week % change. Both are fine because the scaling is the same for every item, but don't
+  report prices in dollars.
+- Weekly price is the average over online and in-store sales, so a change in the online/store mix
+  can look like a small price change.
+- Transactions run from Thu 2018-09-20 to Tue 2020-09-22. Weeks run Monday to Sunday, and the
+  partial first and last weeks are dropped, so the panel covers 2018-09-24 to 2020-09-20.
+- The data includes spring 2020 (COVID store closures), which is an unusual period for sales.
+- `prepare_hm.py` was tested on a fake file with the same format and date range, not the real
+  download. If it runs out of memory, lower `chunksize` in the script.
 
 ## Team
 
