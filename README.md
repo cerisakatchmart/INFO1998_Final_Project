@@ -1,6 +1,6 @@
 # Predicting Next-Week Sales of Clothing Items
 
-This is the repository for our final project in INFO1998 (Cornell Data Science).
+This is the repository for our final project in INFO1998.
 
 ## Hypothesis
 
