@@ -75,11 +75,6 @@ To use the real data:
 - `prepare_hm.py` was only tested on a small fake file in the same format, not the real download.
   If it runs out of memory, lower `chunksize` in the script.
 
-## Academic Integrity
-
-We do not copy code from other projects built on this dataset. We should be able to explain every
-line of code in this repo.
-
 ## Team
 
 Cerisa Katchmart, ck865
