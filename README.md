@@ -75,19 +75,6 @@ To use the real data:
 - `prepare_hm.py` was only tested on a small fake file in the same format, not the real download.
   If it runs out of memory, lower `chunksize` in the script.
 
-## Course Milestones
-
-- [ ] Week 1: Find a group
-- [ ] Week 2: Find a dataset and define the question
-- [ ] Week 3: Explore and manipulate the data; draft hypothesis
-- [ ] Week 4: Clean, visualize, feature engineering; finalize hypothesis
-- [ ] Week 5: Visualizations
-- [ ] Week 6: Choose models (regression); mid-semester check-in
-- [ ] Week 7: Model construction; consider cross validation
-- [ ] Week 8: Finish models; extra validation; revisit visualizations
-- [ ] Week 9: Final touches; write-up interpreting results against the hypothesis
-- [ ] Week 10: Turn in
-
 ## Academic Integrity
 
 We do not copy code from other projects built on this dataset. We should be able to explain every
@@ -95,4 +82,5 @@ line of code in this repo.
 
 ## Team
 
-- _Add names and NetIDs here_
+Cerisa Katchmart, ck865
+Lara De, ld569
